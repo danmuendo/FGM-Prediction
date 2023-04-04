@@ -3,7 +3,7 @@ import streamlit as st
 from prediction import predict
 import joblib
 clf = joblib.load('rf_model.sav')
-st.title('Predicting Population Vulnerable to Female Genital Mutilation ')
+st.title('Predicting Population Vulnerable to Female Genital Mutilation and Rape ')
 st.markdown('Predicting FGM vulnerability population')
 
 def predict(age,gender,education,income,location,poverty,low_education,cultural_beliefs,exposure_to_violence,other_risk_factors):
